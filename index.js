@@ -27,6 +27,16 @@ const questions = [
     },
     {
         "type": "input",
+        "message": "What license do you want to use for this project?",
+        "name": "license"
+    },
+    {
+        "type": "input",
+        "message": "Describe any credit you wish to attribute for the work done in this project.",
+        "name": "credit"
+    },
+    {
+        "type": "input",
         "message": "Please describe the contribution guidelines for the project.",
         "name": "contributing"
     },
@@ -34,6 +44,16 @@ const questions = [
         "type": "input",
         "message": "Please describe the test instructions for the project.",
         "name": "tests"
+    },
+    {
+        "type": "input",
+        "message": "Please enter your github username.",
+        "name": "github"
+    },
+    {
+        "type": "input",
+        "message": "Please enter your email address.",
+        "name": "email"
     }
 ];
 
@@ -41,32 +61,63 @@ const questions = [
 /**
  * Generates text content for README file.
  * @param {string} fileName Name of file to input text
- * @param {} data Information from user prompts
+ * @param {object} data Information from user prompts
  */
 function writeToFile(fileName, data) {
-    console.log(data);
+    const license = data.license
+
     content = `
         # ${data.title}
         
         ## Description
         ${data.description}
-        
-        ## Installation
-        ${data.installation}
-        
+
+        ## Table of Contents
+        - [Installation](#installation)
+        - [Usage](#usage)
+        - [Credits](#credits)
+        - [License](#license)
+
         ## Installation
         ${data.installation}
 
         ## Usage
         ${data.usage}
 
+        ## Credits
+        ${data.credit}
+
+        ## License
+        ${license}
+
         ## Contributing
         ${data.contributing}
 
         ## Tests
         ${data.tests}
+
+        ## Questions
+        For my other projects, feel free to visit: https://github.com/${data.github}.\n
+        For any other questions, please email me at ${data.email}.
         `
-    writeFile(filename, content, (err));
+    writeFile(fileName, removeTabs(content), (err) => {
+        err ? console.error("Error:", err) : console.log(`Success! Your README is in ${fileName}.`)
+    });
+}
+
+/**
+ * Removes tabs from content of README file.
+ * @param {string} Content Text to be input into readme
+ * @return {string} Content without tabs
+ */
+function removeTabs(content) {
+    let result = "";
+    const lines = content.split('\n');
+    for (const line in lines) {
+        result += lines[line].slice(8);
+        result += "\n"
+    }
+    return result;
 }
 
 /* INITIALIZERS */

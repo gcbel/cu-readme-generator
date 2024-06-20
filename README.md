@@ -2,9 +2,7 @@
 
 ## Description
 
-Visit this site at ...
-
-For this project, I created a page that allows users to store personal blog posts that will persist between page visits. To do this, the page locally stores a user's blog information, including usernames, post titles, and post content. Through this project, I had the opportunity to practice using vanilla Javascript, CSS, and Flexbox to create a responsive webpage that dynamically resizes into mobile and desktop layouts.
+For this project, I created generator for a professional README file, so that I can quickly create a template README for a new project. To do this, the program... Through this project, I had the opportunity to practice...
 
 The final...:
 

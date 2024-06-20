@@ -1,16 +1,40 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+/**
+ * Handles generation of a license badge link if license is provided.
+ * 
+ * @param {string} license
+ * @returns {string} Corresponding license badge as a string, empty if no license provided
+ */
+function renderLicenseBadge(license) {
+  license ? renderLicenseBadge : "";
+}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+/**
+ * Returns license badge link.
+ * 
+ * @param {string} license
+ * @returns {string} License badge link as a string
+ */
+function renderLicenseLink(license) {
 
-// TODO: Create a function to generate markdown for README
+}
+
+/**
+ * Returns the license section of README.
+ * 
+ * @param {string} license
+ * @returns {string} License section of README, empty if no license provided
+ */
+function renderLicenseSection(license) {
+
+}
+
+/**
+ * Generates markdown for README.
+ * 
+ * @param 
+ * @returns
+ */
 function generateMarkdown(data) {
   return `# ${data.title}
 

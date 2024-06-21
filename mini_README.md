@@ -17,10 +17,10 @@
 
 
 ## Credits
-
+nope
 
 ## License
-
+MIT
 
 ## Contributing
 
@@ -29,6 +29,7 @@
 
 
 ## Questions
-For my other projects, feel free to visit: https://github.com/.
+For my other projects, feel free to visit: https://github.com/gcbel.
+
 For any other questions, please email me at .
 

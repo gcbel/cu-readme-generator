@@ -1,6 +1,7 @@
 /* DEPENDENCIES */
 const {writeFile} = require("fs");
 const inquirer = require("inquirer");
+import generateMarkdown from "./utils/generateMarkdown";
 
 /* VARIABLES */
 /* All prompts needed for complete readme. */
@@ -26,9 +27,10 @@ const questions = [
         "name": "usage"
     },
     {
-        "type": "input",
+        "type": "list",
         "message": "What license do you want to use for this project?",
-        "name": "license"
+        "name": "license",
+        "choices": ["No license", "MIT", "ISC", "Apache License 2.0", "GNU GPLv2", "GNU GPLv3", "GNU AGPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "Boost Software License 1.0", "The Unlicense"]
     },
     {
         "type": "input",
@@ -88,7 +90,7 @@ function writeToFile(fileName, data) {
         ${data.credit}
 
         ## License
-        ${license}
+        ${generateMarkdown.renderLicenseSection(license)}
 
         ## Contributing
         ${data.contributing}
@@ -106,7 +108,7 @@ function writeToFile(fileName, data) {
 }
 
 /**
- * Removes tabs from content of README file.
+ * Removes tabs from the content of README file.
  * @param {string} Content Text to be input into readme
  * @return {string} Content without tabs
  */

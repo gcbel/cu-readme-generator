@@ -19,7 +19,8 @@ N/A
 ## Credits
 
 Starter code provided by the Columbia University Bootcamp: https://github.com/coding-boot-camp/potential-enigma <br>
-Reference for common licenses: https://choosealicense.com/.
+Reference for common licenses: https://choosealicense.com/. <br>
+Reference for license badge links: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 
 ## License
 

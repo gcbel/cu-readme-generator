@@ -1,13 +1,4 @@
 /**
- * Handles generation of a license badge link if license is provided.
- * @param {string} license
- * @returns {string} Corresponding license badge as a string, empty if no license provided
- */
-function renderLicenseBadge(license) {
-  license ? renderLicenseLink(license) : "";
-}
-
-/**
  * Returns license badge link.
  * @param {string} license
  * @returns {string} License badge link as a string
@@ -94,5 +85,3 @@ function renderLicenseSection(license) {
 export default function generateMarkdown(data) {
   return [renderLicenseLink(data.license), renderLicenseSection(data.license)];
 }
-
-// module.exports = generateMarkdown;

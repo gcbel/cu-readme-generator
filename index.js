@@ -1,7 +1,10 @@
 /* DEPENDENCIES */
-const {writeFile} = require("fs");
-const inquirer = require("inquirer");
-import generateMarkdown from "./utils/generateMarkdown";
+// const {writeFile} = require("fs");
+import { writeFile } from 'fs';
+import inquirer from 'inquirer';
+// const inquirer = require("inquirer");
+// const generateMarkdown = require("./utils/generateMarkdown");
+import generateMarkdown from "./utils/generateMarkdown.js";
 
 /* VARIABLES */
 /* All prompts needed for complete readme. */
@@ -30,7 +33,7 @@ const questions = [
         "type": "list",
         "message": "What license do you want to use for this project?",
         "name": "license",
-        "choices": ["No license", "MIT", "ISC", "Apache License 2.0", "GNU GPLv2", "GNU GPLv3", "GNU AGPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "Boost Software License 1.0", "The Unlicense"]
+        "choices": ["No license", "MIT", "ISC", "Apache 2.0", "GNU GPLv2", "GNU GPLv3", "GNU AGPLv3", "GNU LGPLv3", "Mozilla Public 2.0", "Boost Software 1.0", "The Unlicense"]
     },
     {
         "type": "input",
@@ -66,13 +69,14 @@ const questions = [
  * @param {object} data Information from user prompts
  */
 function writeToFile(fileName, data) {
-    const license = data.license
+    const license = generateMarkdown(data);
 
-    content = `
+    const content = `
         # ${data.title}
         
         ## Description
         ${data.description}
+        ${license[0]}
 
         ## Table of Contents
         - [Installation](#installation)
@@ -90,7 +94,7 @@ function writeToFile(fileName, data) {
         ${data.credit}
 
         ## License
-        ${generateMarkdown.renderLicenseSection(license)}
+        ${license[1]}
 
         ## Contributing
         ${data.contributing}

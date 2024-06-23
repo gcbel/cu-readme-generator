@@ -37,7 +37,6 @@ function renderLicenseLink(license) {
     case "The Unlicense":
       return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
   }
-  return "";
 }
 
 /**
@@ -80,13 +79,11 @@ function renderLicenseInfoLink(license) {
  */
 function renderLicenseSection(license) {
   if (license === "No license") {
-    return ""
+    return "This application is not covered under a license."
   }
   const infoLink = renderLicenseInfoLink(license);
-  return `${license} license
-
-Please refer to this link for more information: ${infoLink}
-`
+  return `This application is covered under the ${license} license.\n
+          Please refer to this link for more information: ${infoLink}`
 }
 
 /**
@@ -94,8 +91,8 @@ Please refer to this link for more information: ${infoLink}
  * @param 
  * @returns
  */
-function generateMarkdown(data) {
-  return [renderLicenseSection(data.license), renderLicenseBadge(data.license)];
+export default function generateMarkdown(data) {
+  return [renderLicenseLink(data.license), renderLicenseSection(data.license)];
 }
 
-module.exports = generateMarkdown;
+// module.exports = generateMarkdown;

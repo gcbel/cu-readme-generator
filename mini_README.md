@@ -3,6 +3,7 @@
 
 ## Description
 
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Table of Contents
 - [Installation](#installation)
@@ -17,10 +18,12 @@
 
 
 ## Credits
-nope
+
 
 ## License
-MIT
+This application is covered under the The Unlicense license.
+
+  Please refer to this link for more information: http://unlicense.org/
 
 ## Contributing
 
@@ -29,7 +32,7 @@ MIT
 
 
 ## Questions
-For my other projects, feel free to visit: https://github.com/gcbel.
+For my other projects, feel free to visit: https://github.com/.
 
 For any other questions, please email me at .
 

@@ -8,13 +8,9 @@ With a user's input in place of the samples, the completed README will follow th
 
 ![README image](assets/images/readme.png)
 
-This project is based on this reference provided by the Columbia University Full-Stack Bootcamp.
-
-
-
 ## Installation
 
-To run this project locally, the zip of all code files will need to be downloaded.
+The README generator can be run locally by downloading this project. 
 
 ## Usage
 

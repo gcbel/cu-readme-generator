@@ -1,9 +1,6 @@
 /* DEPENDENCIES */
-// const {writeFile} = require("fs");
 import { writeFile } from 'fs';
 import inquirer from 'inquirer';
-// const inquirer = require("inquirer");
-// const generateMarkdown = require("./utils/generateMarkdown");
 import generateMarkdown from "./utils/generateMarkdown.js";
 
 /* VARIABLES */
@@ -75,7 +72,7 @@ function writeToFile(fileName, data) {
         # ${data.title}
         
         ## Description
-        ${data.description}
+        ${data.description} <br>
         ${license[0]}
 
         ## Table of Contents
@@ -131,7 +128,7 @@ function removeTabs(content) {
 function init() {
     inquirer
         .prompt(questions)
-        .then((responses) => writeToFile("mini_README.md", responses));
+        .then((responses) => writeToFile(`${responses.title}_README.md`, responses));
 }
 
 /* Function call to initialize app */

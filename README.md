@@ -14,7 +14,7 @@ The README generator can be run locally by downloading this project.
 
 ## Usage
 
-To generate a README file, this project can be run with the command `node index` or `node index.js`. The terminal will prompt the user for 10 questions that will makeup the content of the file, and the file will automatically appear in the same folder as the index.js, and will be titled "".
+To generate a README file, this project can be run with the command `node index` or `node index.js`. The terminal will prompt the user for 10 questions that will makeup the content of the file, and the file will automatically appear in the same folder as the index.js, and will be titled `title`_README.md.
 
 ![Example README](assets/images/questions.png)
 

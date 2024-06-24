@@ -6,7 +6,7 @@ For this project, I created generator for a professional README file. The progra
 
 With a user's input in place of the samples, the completed README will follow this pattern:
 
-![README image](assets/images/readme.png)
+![Example README](assets/images/example_readme.png)
 
 ## Installation
 
@@ -15,6 +15,8 @@ The README generator can be run locally by downloading this project.
 ## Usage
 
 To generate a README file, this project can be run with the command `node index` or `node index.js`. The terminal will prompt the user for 10 questions that will makeup the content of the file, and the file will automatically appear in the same folder as the index.js, and will be titled "".
+
+![Example README](assets/images/questions.png)
 
 ## Credits
 

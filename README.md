@@ -6,7 +6,7 @@ For this project, I created generator for a professional README file. The progra
 
 With a user's input in place of the samples, the completed README will follow this pattern:
 
-![Example README](assets/images/example_readme.png)
+![Example README](/assets/images/example_readme.png)
 
 ## Installation
 
@@ -14,13 +14,13 @@ The README generator can be run locally by cloning this repository.
 
 Once the repository has been cloned, the program will require Node.js. To check if you have previously installed Node.js, you can run `node --version`. If Node.js is installed, a version number will appear. If no version number appears, you can download the package [here](https://nodejs.org/en/download/package-manager).
 
-To download the package dependencies ([inquirer](https://www.npmjs.com/package/inquirer) and [colors](https://www.npmjs.com/package/colors)), run `npm install`.
+To download the package dependencies ([inquirer](https://www.npmjs.com/package/inquirer)), run `npm install`.
 
 ## Usage
 
 To generate a README file, this project can be run with the command `node index` or `node index.js`. The terminal will prompt the user for 10 questions that will makeup the content of the file, and the file will automatically appear in the same folder as the index.js, and will be titled `title`_README.md.
 
-![Example README](assets/images/questions.png)
+![Example README](/assets/images/questions.png)
 
 ## Credits
 

@@ -2,11 +2,11 @@
 
 ## Description
 
-For this project, I created generator for a professional README file. To do this, the program... Through this project, I had the opportunity to practice using Node.js.
+For this project, I created generator for a professional README file. The program prompts a user to input information about their project and allows the user to choose from a number of licenses to protect their project under. Using this input, the program automatically populates a README file which this information pre-formatted. Through this project, I had the opportunity to practice using Node.js.
 
-The final...:
+With a user's input in place of the samples, the completed README will follow this pattern:
 
-![Reference image](assets/images/reference-gif.gif)
+![README image](assets/images/readme.png)
 
 This project is based on this reference provided by the Columbia University Full-Stack Bootcamp.
 

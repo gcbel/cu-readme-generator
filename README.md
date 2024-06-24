@@ -10,7 +10,11 @@ With a user's input in place of the samples, the completed README will follow th
 
 ## Installation
 
-The README generator can be run locally by downloading this project. 
+The README generator can be run locally by cloning this repository. 
+
+Once the repository has been cloned, the program will require Node.js. To check if you have previously installed Node.js, you can run `node --version`. If Node.js is installed, a version number will appear. If no version number appears, you can download the package [here](https://nodejs.org/en/download/package-manager).
+
+To download the package dependencies ([inquirer](https://www.npmjs.com/package/inquirer) and [colors](https://www.npmjs.com/package/colors)), run `npm install`.
 
 ## Usage
 

@@ -8,6 +8,8 @@ With a user's input in place of the samples, the completed README will follow th
 
 ![Example README](/assets/images/example_readme.png)
 
+[Here](https://drive.google.com/file/d/1mrGk6oeuHI9n11pVvQuuRo21H57Y9Nzc/view?usp=sharing) is a video elborating on the installation and usage instructions.
+
 ## Installation
 
 The README generator can be run locally by cloning this repository. 

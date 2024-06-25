@@ -2,7 +2,7 @@
 
 ## Description
 
-For this project, I created generator for a professional README file. The program prompts a user to input information about their project and allows the user to choose from a number of licenses to protect their project under. Using this input, the program automatically populates a README file which this information pre-formatted. Through this project, I had the opportunity to practice using Node.js.
+For this project, I created command-line README generator. The program prompts a user to input information about their project and allows the user to choose from a number of licenses to protect their project under. Using this input, the program automatically populates a README file which this information pre-formatted. Through this project, I had the opportunity to practice using Node.js.
 
 With a user's input in place of the samples, the completed README will follow this pattern:
 
@@ -14,7 +14,7 @@ The README generator can be run locally by cloning this repository.
 
 Once the repository has been cloned, the program will require Node.js. To check if you have previously installed Node.js, you can run `node --version`. If Node.js is installed, a version number will appear. If no version number appears, you can download the package [here](https://nodejs.org/en/download/package-manager).
 
-To download the package dependencies ([inquirer](https://www.npmjs.com/package/inquirer)), run `npm install`.
+To download the package dependency ([inquirer](https://www.npmjs.com/package/inquirer)), run `npm install`.
 
 ## Usage
 

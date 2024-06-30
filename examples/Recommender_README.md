@@ -10,6 +10,9 @@ Movie recommender based on user input <br>
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 None, web application.

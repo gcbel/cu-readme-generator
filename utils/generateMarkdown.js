@@ -70,7 +70,7 @@ function renderLicenseInfoLink(license) {
  */
 function renderLicenseSection(license) {
   if (license === "No license") {
-    return "This application is not covered under a license."
+    return ""
   }
   const infoLink = renderLicenseInfoLink(license);
   return `This application is covered under the ${license} license.\n

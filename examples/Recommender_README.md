@@ -26,7 +26,7 @@ Thank you to my TAs, Max and Allen.
 ## License
 This application is covered under the MIT license.
 
-  Please refer to this link for more information: https://opensource.org/licenses/MIT
+Please refer to this link for more information: https://opensource.org/licenses/MIT
 
 ## Contributing
 N/A
